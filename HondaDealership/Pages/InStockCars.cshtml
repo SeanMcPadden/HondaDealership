@@ -1,0 +1,39 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model HondaDealership.Pages.InStockCarsModel
+@{
+}
+<h2>Cars In Stock</h2>
+
+<table class="table">
+    <thead style="background-color=Black">
+        <tr>
+            <th>No.</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Colour</th>
+            <th>Registration</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach(var cr in Model.cars)
+{
+        <tr>
+            <td>@cr.Id</td>
+            <td>@cr.Make</td>
+            <td>@cr.CarModel</td>
+            <td>@cr.Year</td>
+            <td>@cr.Colour</td>
+            <td>@cr.Registration</td>
+            <td>£@cr.Price</td>
+            <td>
+                <a class="btn btn-success btn-sm" href="/GetEmail?Id=@cr.Id">Buy</a>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

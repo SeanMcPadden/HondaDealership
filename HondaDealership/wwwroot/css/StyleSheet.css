@@ -1,0 +1,91 @@
+﻿
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column
+
+{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.contact-form-area {
+    padding: 70px 90px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-form-area {
+        padding: 50px 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-form-area {
+        padding: 50px 40px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .contact-form-area {
+        padding: 30px 20px;
+    }
+}
+
+.contact-form-area .shape {
+    position: absolute;
+    z-index: -1;
+}
+
+.contact-form-area .shape-1 {
+    top: auto;
+    left: auto;
+    bottom: -45px;
+    right: -60px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .contact-form-area .shape-1 {
+        right: -5px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-form-area .shape-1 {
+        right: -5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-form-area .shape-1 {
+        right: -5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-form-area .shape-1 {
+    }
+}
+  
+        
+
+.columnForCheckout {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.rowForCheckout:after {
+  content: "";
+  display: table;
+  clear: both;
+}

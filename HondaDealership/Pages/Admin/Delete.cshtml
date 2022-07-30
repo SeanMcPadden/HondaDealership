@@ -1,0 +1,29 @@
+﻿@page
+@using Microsoft.Data.SqlClient;
+
+@{
+    try
+    {
+        string Id = Request.Query["Id"];
+
+        string connectionString = "Server=(localdb)\\MSSQLLocalDB; database=HondaDealership;";
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+
+            String sql = "DELETE FROM Car WHERE Id=@Id";
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@Id", Id);
+
+                command.ExecuteNonQuery();
+            }
+        }
+    }
+    catch(Exception ex)
+    {
+
+    }
+
+    Response.Redirect("/Admin/InStockCarsAdmin");
+}

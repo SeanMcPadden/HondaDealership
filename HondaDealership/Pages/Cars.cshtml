@@ -1,0 +1,113 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Cars";
+}
+<h1>@ViewData["Title"]</h1>
+
+<body>
+    <h4>Search Engine for cars in stock</h4>
+
+    <div  style="color:dimgrey;"  width="30%" >
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Select a model</option>
+            <option value="1">Accord</option>
+            <option value="2">Civic</option>
+            <option value="3">Crv</option>
+            <option value="3">Crx</option>
+            <option value="3">Integra</option>
+            <option value="3">Jazz</option>
+        </select>
+        <p> From</p>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Select a year</option>
+            <option value="1">2022</option>
+            <option value="2">2021</option>
+            <option value="3">2020</option>
+            <option value="1">2019</option>
+            <option value="2">2018</option>
+            <option value="3">2017</option>
+            <option value="1">2016</option>
+            <option value="2">2015</option>
+            <option value="3">2014</option>
+            <option value="1">2013</option>
+            <option value="2">2012</option>
+            <option value="3">2011</option>
+            <option value="1">2010</option>
+            <option value="2">2009</option>
+            <option value="3">2008</option>
+            <option value="1">2007</option>
+            <option value="2">2006</option>
+            <option value="3">2005</option>
+            <option value="1">2004</option>
+            <option value="2">2003</option>
+            <option value="3">2002</option>
+            <option value="1">2001</option>
+            <option value="2">2000</option>
+            <option value="3">1999</option>
+            <option value="1">1998</option>
+            <option value="2">1997</option>
+            <option value="3">1996</option>
+            <option value="1">1995</option>
+            <option value="2">1994</option>
+            <option value="3">1993</option>
+            <option value="1">1992</option>
+            <option value="2">1991</option>
+            <option value="3">1990</option>
+            <option value="1">1989</option>
+            <option value="2">1988</option>
+            <option value="3">1987</option>
+        </select>
+        <p> To</p>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Select a year</option>
+            <option value="1">2022</option>
+            <option value="2">2021</option>
+            <option value="3">2020</option>
+            <option value="1">2019</option>
+            <option value="2">2018</option>
+            <option value="3">2017</option>
+            <option value="1">2016</option>
+            <option value="2">2015</option>
+            <option value="3">2014</option>
+            <option value="1">2013</option>
+            <option value="2">2012</option>
+            <option value="3">2011</option>
+            <option value="1">2010</option>
+            <option value="2">2009</option>
+            <option value="3">2008</option>
+            <option value="1">2007</option>
+            <option value="2">2006</option>
+            <option value="3">2005</option>
+            <option value="1">2004</option>
+            <option value="2">2003</option>
+            <option value="3">2002</option>
+            <option value="1">2001</option>
+            <option value="2">2000</option>
+            <option value="3">1999</option>
+            <option value="1">1998</option>
+            <option value="2">1997</option>
+            <option value="3">1996</option>
+            <option value="1">1995</option>
+            <option value="2">1994</option>
+            <option value="3">1993</option>
+            <option value="1">1992</option>
+            <option value="2">1991</option>
+            <option value="3">1990</option>
+            <option value="1">1989</option>
+            <option value="2">1988</option>
+            <option value="3">1987</option>
+        </select>
+        <br />
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Price Range</option>
+            <option value="1">1000 - 4000</option>
+            <option value="2">4000 - 9000</option>
+            <option value="3">9000 - 15000</option>
+            <option value="3">15000 - 25000</option>
+            <option value="3">25000+</option>
+        </select>
+        <br />
+        <button type="button" class="btn btn-outline-secondary">Search</button>
+    </div>
+</body>

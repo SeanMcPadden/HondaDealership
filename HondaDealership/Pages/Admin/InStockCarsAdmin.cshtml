@@ -1,0 +1,43 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model HondaDealership.Pages.Admin.InStockCarsAdminModel
+@{
+}
+<h2>Cars In Stock (Admin)</h2>
+<br />
+<a class="btn btn-secondary " href="/Admin/Create">New Car</a>
+<br />
+<br />
+<table class="table">
+    <thead style="background-color=Black">
+        <tr>
+            <th>No.</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Colour</th>
+            <th>Registration</th>
+            <th>Price</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach(var cr in Model.listCars)
+{
+        <tr>
+            <td>@cr.Id</td>
+            <td>@cr.Make</td>
+            <td>@cr.CarModel</td>
+            <td>@cr.Year</td>
+            <td>@cr.Colour</td>
+            <td>@cr.Registration</td>
+            <td>£@cr.Price</td>
+            <td>
+                <a class="btn btn-success btn-sm" href="/Admin/Edit?Id=@cr.Id">Edit</a>
+                <a class="btn btn-danger btn-sm" href="/Admin/Delete?Id=@cr.Id">Delete</a>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

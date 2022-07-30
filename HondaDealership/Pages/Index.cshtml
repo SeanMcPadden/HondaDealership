@@ -1,0 +1,84 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+
+<div class="text-center">
+    <h2>Seans Honda Dealership</h2>
+</div>
+<div class="row">
+    <div id="image1" class="flex-column">
+        <a href="/Crx">
+            <img src="./WebImages/HomePage/Crx.jfif"
+                 class="rounded" alt="..." width="350" height="225">
+        </a>
+    </div>
+    <div id="image2" class="flex-column">
+        <a href="/Eg6">
+            <img src="./WebImages/HomePage/Eg6.jfif"
+                 class="rounded" alt="..." width="350" height="225">
+        </a>
+    </div>
+    <div id="image3" class="flex-column">
+        <a href="/Integra">
+            <img src="./WebImages/HomePage/Integra.jfif"
+                 class="rounded" alt="..." width="350" height="225">
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">
+            Honda Civic Crx 1990
+        </div>
+        <div class="col">
+            Honda Civic Eg6 1996
+        </div>
+        <div class="col">
+            Honda Integra 1999
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">
+            <a href="/Crx">
+                <input type="button" class="btn btn-outline-secondary" value="More Info">
+            </a>
+        </div>
+        <div class="col">
+            <a href="/Eg6">
+                <input type="button" class="btn btn-outline-secondary" value="More Info">
+            </a>
+        </div>
+        <div class="col">
+            <a href="/Integra">
+                <input type="button" class="btn btn-outline-secondary" value="More Info">
+            </a>
+        </div>
+    </div>
+</div>

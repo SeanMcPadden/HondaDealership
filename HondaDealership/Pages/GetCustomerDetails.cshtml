@@ -1,0 +1,63 @@
+﻿@page
+@model HondaDealership.Pages.PaymentModel
+@{
+}
+
+<form method="post">
+		<div>
+			<div class="card card-body">
+				<div class="input-group-section">
+					<div class="form-group">
+						<label class="control-label">
+						First Name<span class="color-red">*</span>
+						</label>
+						<input type="text" name="FirstName" class="firstName trimSpace
+							   trimSpaceOnBlur form-control" value=""/>
+					</div>			
+				</div>
+				<div class="form-group">
+					<label class="control-label">
+						   Last Name<span class="color-red">*</span>
+					</label>
+					<input  type="text" name="LastName" class="LastName
+								   trimSpace form-control" value="" autocomplete="off"/>
+				</div>
+				<div class="form-group">
+					<label class="control-label">
+						   Mobile Number<span class="color-red">*</span>
+					</label>
+					<input  type="text" name="MobileNumber" class="MobileNumber
+								   trimSpace form-control" value="" autocomplete="off"/>
+				</div>
+				<div class="form-group">
+					<label class="control-label">
+						   Address: House Number<span class="color-red">*</span>
+					</label>
+					<input  type="text" name="AddressNumber" class="Address
+								   trimSpace form-control" value="" autocomplete="off"/>
+						<br/>
+						   <label class="control-label">
+						   Street Name<span class="color-red">*</span>
+					</label>
+					<input  type="text" name="AddressStreet" class="Address
+								   trimSpace form-control" value="" autocomplete="off"/>
+						<br/>
+						   <label class="control-label">
+						   City<span class="color-red">*</span>
+						   </label>
+					<input  type="text" name="AddressCity" class="Address
+								   trimSpace form-control" value="" autocomplete="off"/>
+						<br/>
+						   <label class="control-label">
+						   Postcode<span class="color-red">*</span>
+						   </label>
+					<input  type="text" name="AddressPostCode" class="Address
+								   trimSpace form-control" value="" autocomplete="off"/>
+				</div>
+
+			        <div class="col-sm-3 d-grid">
+						<button type="submit" class="btn btn-success">Submit</button>
+					</div>
+			</div>
+		</div>
+</form>

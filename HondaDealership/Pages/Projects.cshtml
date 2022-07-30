@@ -1,0 +1,73 @@
+﻿@page
+@model HondaDealership.Pages.ProjectsModel
+@{
+}
+
+<h1 style="text-align: center">Projects in the pipeline</h1>
+
+<div class="section section-padding" data-bg-color="#f8faff">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 col-12" data-aos="fade-up">
+               <br />
+               <br />
+               <br />
+               <div class="section-title-two mb-8">
+                  <h3 class="title">Honda Civic eg 1994</h3>
+               </div>
+                <br />
+                <p>This car was bought on ebay from a man in Minasota, US. The car was too
+                   rare to let rot away so we decided to purchase it and get it sent over 
+                   to Belfast in January 2022. Keep your eyes peeled.
+                </p>
+            </div>
+                 <div class="offset-xl-1 col-xl-6 col-lg-6 col-12" data-aos="fade-up">
+                 <img class="image" src="~/WebImages/ProjectsPage/ProjectCar.jpg"
+                  height="350" width="550" >
+                </div>
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+        <div  align="Center">
+             <h2 class="title fz-32">Have a car that needs overhauled?</h2>
+             <p class="sub-title">Get in touch with us to see if we can make
+                                your pride and joy something classical.
+             </p>
+        </div>
+             <br />
+<form method="POST">
+    <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">Your Name</label>
+            <div class="col-sm-6">
+                <input type="text" class="FullName trimSpace
+							   trimSpaceOnBlur form-control" name="FullName" value="" />
+            </div>
+    </div>
+        <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">Email</label>
+            <div class="col-sm-6">
+                <input type="email" class="Email trimSpace
+							   trimSpaceOnBlur form-control" name="Email" value="" />
+            </div>
+    </div>
+        <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">Honda Model</label>
+            <div class="col-sm-6">
+                <input type="text" class="HondaModel trimSpace
+							   trimSpaceOnBlur form-control" name="HondaModel" value="" />
+            </div>
+    </div>
+    				   <div>
+						<p style="color:red; text-align: center">@Model.formComplete</p>
+					</div>
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>

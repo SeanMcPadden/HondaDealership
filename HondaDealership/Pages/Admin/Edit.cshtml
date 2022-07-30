@@ -1,0 +1,77 @@
+﻿@page
+@model HondaDealership.Pages.Admin.EditModel
+@{
+}
+
+<br />
+<h2>Edit Car</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form method="POST">
+    <input type="hidden" name="Id" value="@Model.car.Id" />
+    <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">Make</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Make" value="@Model.car.Make" />
+            </div>
+    </div>
+        <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">CarModel</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="CarModel" value="@Model.car.CarModel" />
+            </div>
+    </div>
+        <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">Year</label>
+            <div class="col-sm-6">
+                <input type="number" class="form-control" name="Year" value="@Model.car.Year" />
+            </div>
+    </div>
+        <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">Colour</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Colour" value="@Model.car.Colour" />
+            </div>
+    </div>
+        <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">Registration</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Registration" value="@Model.car.Registration" />
+            </div>
+    </div>
+        <div class="row mb-3">
+        <label class="row mb-3"></label>
+            <label class="col-sm-3 col-form-label">Price</label>
+            <div class="col-sm-6">
+                <input type="number" class="form-control" name="Price" value="@Model.car.Price" />
+            </div>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>@Model.successMessage</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+</form>

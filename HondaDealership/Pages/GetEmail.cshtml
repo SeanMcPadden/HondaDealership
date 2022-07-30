@@ -1,0 +1,32 @@
+﻿@page
+@model HondaDealership.Pages.CheckOutModel
+
+<form method="post">
+		<div>
+			<div class="card card-body">
+				<p>Enter your email address to proceed:</p>
+				<div class="input-group-section">
+					<div class="form-group">
+						<label class="control-label">
+						Email Address<span class="color-red">*</span>
+						</label>
+						<input type="email" id="guest.email" name="Email" class="guestEmail trimSpace
+							   trimSpaceOnBlur form-control" value=""/>
+					</div>			
+				</div>
+				<div class="form-group">
+					<label class="control-label">
+						   Confirm Email Address<span class="color-red">*</span>
+					</label>
+					<input  type="email" name="confirmEmail" class="confirmEmail
+								   trimSpace form-control" value="" autocomplete="off"/>
+				</div>
+				   <div class="col-sm-3 d-grid">
+						<p style="color:red;">@Model.errorMessage</p>
+					</div>
+			        <div class="col-sm-3 d-grid">
+						<button type="submit" class="btn btn-success">Submit</button>
+					</div>
+			</div>
+		</div>
+</form>
